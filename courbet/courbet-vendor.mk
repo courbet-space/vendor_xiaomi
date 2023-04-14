@@ -189,7 +189,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/courbet/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/xiaomi/courbet/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/xiaomi/courbet/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/xiaomi/courbet/proprietary/vendor/lib64/mibokeh_712_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/mibokeh_712_opencl.bin
 
 PRODUCT_PACKAGES += \
@@ -330,6 +329,7 @@ PRODUCT_PACKAGES += \
     libmialgo_sd \
     libmialgoengine \
     libmibokeh_712 \
+    libmpbase \
     libmulticam_image_optical_zoom \
     libmulticam_video_optical_zoom \
     libnotifyaudiohal \
