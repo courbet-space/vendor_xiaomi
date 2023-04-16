@@ -196,6 +196,7 @@ PRODUCT_PACKAGES += \
     libsmwrapper \
     libswvdec \
     libvppclient \
+    libvpphcp \
     capi_v2_aptX_CLHDAD_Encoder \
     capi_v2_aptX_Classic \
     capi_v2_aptX_HD \
@@ -207,6 +208,11 @@ PRODUCT_PACKAGES += \
     libcvpdsp_skel \
     libdirac-capiv2 \
     libdspCV_skel \
+    libAlacSwDec \
+    libApeSwDec \
+    libFlacSwDec \
+    libOmxG711Dec \
+    libvpptestutils \
     libdsp_streamer_add_constant \
     libdsp_streamer_binning \
     libdsp_streamer_skel \

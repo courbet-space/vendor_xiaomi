@@ -698,6 +698,57 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libAlacSwDec",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libAlacSwDec.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libApeSwDec",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libApeSwDec.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libFlacSwDec",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libFlacSwDec.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.vpp@1.1",
 	owner: "xiaomi",
 	strip: {
@@ -808,6 +859,24 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+	name: "libOmxG711Dec",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libOmxG711Dec.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
 
 cc_prebuilt_library_shared {
 	name: "libOmxAlacDec",
@@ -1006,8 +1075,46 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libOmxVpp.so"],
 		},
+                android_arm64: {
+                        srcs: ["proprietary/vendor/lib64/libOmxVpp.so"],
+                },
+
 	},
-	compile_multilib: "32",
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+        name: "libvpphcp",
+        owner: "xiaomi",
+        strip: {
+                none: true,
+        },
+        target: {
+                android_arm64: {
+                        srcs: ["proprietary/vendor/lib64/libvpphcp.so"],
+                },
+        },
+        compile_multilib: "64",
+        check_elf_files: false,
+        prefer: true,
+        soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libvpptestutils",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libvpptestutils.so"],
+		},
+	},
+	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
@@ -1176,6 +1283,10 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libvppclient.so"],
 		},
+                android_arm64: {
+                        srcs: ["proprietary/vendor/lib64/libvppclient.so"],
+                },
+
 	},
 	compile_multilib: "32",
 	check_elf_files: false,
