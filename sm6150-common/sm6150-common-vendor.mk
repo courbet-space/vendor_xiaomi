@@ -292,6 +292,7 @@ PRODUCT_PACKAGES += \
     libjnihelper \
     libkcl \
     libkernelmanager \
+    libkeymasterprovision \
     libkeymasterdeviceutils \
     libkeymasterutils \
     liblbs_core \
@@ -322,6 +323,7 @@ PRODUCT_PACKAGES += \
     libqcmaputils \
     libqcrilFramework \
     libqcrildatactl \
+    libspcom \
     libqdi \
     libqdp \
     libqisl \
